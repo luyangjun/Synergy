@@ -1,0 +1,18 @@
+
+set echo off
+
+@@create_kims_tables.sql
+@@seq_proc_func.sql
+
+
+@@.\init_data\PM_INDEX.sql
+@@.\init_data\PM_BENCHMARK.sql
+@@.\init_data\PM_BENCHMARKDETAIL.sql
+@@.\init_data\PM_QUOTAINFO.sql
+@@.\init_data\PM_FUNDBENCHMARK.sql
+@@.\init_data\IF_QUOTAINFO.sql
+
+
+spool off
+exit
+
